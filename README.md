@@ -1,5 +1,5 @@
-# Rock Paper Scissors
-This project consists of a very simple but clean rock paper scissors game where you play against the CPU.
+# Rock-Paper-Scissors ✂
+This project consists of a very simple but clean rock-paper-scissors game where you play against the CPU.
 #### Languages
 - HTML
 - CSS
