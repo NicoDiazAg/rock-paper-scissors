@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nicolas Diaz-Aguilar" />
+    <meta name="description" content="Rock-Paper-Scissors Game using HTML, CSS, and JavaScript" />
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Rock-Paper-Scissors</h1>
+
+    <div class="choiceContainer">
+      <button onclick="playGame('Rock')">👊</button>
+      <button onclick="playGame('Paper')">🖐️</button>
+      <button onclick="playGame('Scissors')">✌️</button>
+    </div>
+
+    <div id="playerDisplay">Player:</div>
+    <div id="cpuDisplay">CPU:</div>
+    <div id="resultDisplay"></div>
+
+    <div class="scoreDisplay">
+      Player Score: <span id="playerScoreDisplay">0</span>
+    </div>
+    <div class="scoreDisplay">
+      CPU Score: <span id="cpuScoreDisplay">0</span>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+/* || RESET */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* FONTS */
+  --FF: "Lexend", serif;
+
+  /* COLORS */
+  --BG-COLOR: #ffffff;
+  --BUTTON-COLOR: hsl(50, 50%, 75%);
+  --BUTTON-FADE-COLOR: hsl(50, 50%, 90%);
+  --FONT-COLOR: hsl(35, 75%, 15%);
+}
+
+/* || GENERAL STYLES */
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--FF);
+  color: var(--FONT-COLOR);
+  background-color: var(--BG-COLOR);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+h1 {
+  font-size: clamp(25px, 8vw, 75px);
+  white-space: nowrap;
+}
+
+.choiceContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 30px 0;
+  gap: 25px;
+}
+
+.choiceContainer button {
+  font-size: clamp(25px, 16vw, 100px);
+  background-color: var(--BUTTON-COLOR);
+  border-radius: 250px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+.choiceContainer button:hover {
+  background-color: var(--BUTTON-FADE-COLOR);
+  transform: translateY(-5px);
+}
+
+#playerDisplay,
+#cpuDisplay {
+  font-size: 2rem;
+}
+
+#resultDisplay {
+  font-size: 3rem;
+  margin: 30px 0;
+}
+
+.scoreDisplay {
+  font-size: 2rem;
+}
+
+.greenText,
+#playerScoreDisplay {
+  font-weight: bold;
+  color: rgb(37, 161, 37);
+}
+
+.redText,
+#cpuScoreDisplay {
+  font-weight: bold;
+  color: rgb(155, 0, 0);
+}
+
+.tieText {
+  font-weight: bold;
+}
