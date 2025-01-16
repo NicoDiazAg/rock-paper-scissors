@@ -1,5 +1,5 @@
 # Rock-Paper-Scissors ✂
-This project consists of a very simple but clean rock-paper-scissors game where you play against the CPU.
+This project consists of a straightforward rock-paper-scissors game where you play against the CPU. I used methods and properties such as setInterval(), textContent, and classList.
 #### Languages
 - HTML
 - CSS
